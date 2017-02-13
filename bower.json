@@ -1,5 +1,5 @@
 {
-  "name": "Ghostium",
+  "name": "ghostium",
   "version": "2.2.1",
   "dependencies": {
     "modernizr": "~2.6.2",

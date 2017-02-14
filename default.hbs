@@ -38,7 +38,6 @@
 
     <link rel="stylesheet" href="{{asset 'css/main.min.css'}}"/>
 
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
       {{> custom/config}}
 
@@ -102,6 +101,17 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
       }
+
+      window.MathJax = {
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      };
+
     </script>
+
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
   </body>
 </html>

@@ -20,6 +20,7 @@
   "devDependencies": {
     "fastclick": "~0.6.10",
     "font-awesome": "~4.7.0",
+    "MathJax": "~2.7",
     "prism": "gh-pages",
     "pace": "~0.5.1",
     "jquery-pjax": "master"

@@ -320,6 +320,13 @@ module.exports = function(grunt) {
               '<%= dir.fonts %>/**/*'
             ],
             dest: '<%= dir.build %>'
+          },
+          {
+            expand: true,
+            dot: true,
+            cwd: '<%= dir.src %><%= dir.assets %>',
+            src: ['_components/MathJax/**/*'],
+            dest: '<%= dir.build %><%= dir.assets %>'
           }
         ]
       },

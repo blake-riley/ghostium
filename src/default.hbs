@@ -118,10 +118,13 @@
 
     <script src="/assets/_components/jquery/dist/jquery.js"></script>
     <script src="/assets/_components/jquery-pjax/jquery.pjax.js"></script>
+
     <script src="/assets/js/drawer.js"></script>
     <script src="/assets/js/imageLoader.js"></script>
     <script src="/assets/js/scripts.js"></script>
     <!-- endbuild -->
+
+    <script type="text/javascript" async src="/assets/_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <script type="text/javascript">
 
@@ -142,6 +145,14 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
       }
+
+      MathJax.Hub.Config({  
+          tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']],
+                    processEscapes: true}
+      });
+
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+
     </script>
   </body>
 </html>

@@ -119,6 +119,7 @@
 
     <script src="/assets/_components/jquery/dist/jquery.js"></script>
     <script src="/assets/_components/jquery-pjax/jquery.pjax.js"></script>
+
     <script src="/assets/js/drawer.js"></script>
     <script src="/assets/js/imageLoader.js"></script>
     <script src="/assets/js/scripts.js"></script>
@@ -143,6 +144,17 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
       }
+
+      window.MathJax = {
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      };
+
     </script>
+
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
   </body>
 </html>

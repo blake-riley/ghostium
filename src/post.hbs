@@ -108,4 +108,9 @@
   } else {
     document.querySelector('.post-comments').remove();
   }
+
+  if (typeof MathJax != 'undefined') {
+    MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+  }
+
 </script>

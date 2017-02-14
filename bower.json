@@ -18,6 +18,7 @@
     "src/assets/_components"
   ],
   "devDependencies": {
+    "academicons": "master",
     "fastclick": "~0.6.10",
     "font-awesome": "~4.7.0",
     "prism": "gh-pages",

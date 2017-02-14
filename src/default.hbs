@@ -37,6 +37,7 @@
     <link href="//fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic|Open+Sans:700,400&subset=latin,latin-ext" rel="stylesheet">
 
     <!-- build:css({src,.tmp}) /assets/css/main.min.css -->
+    <link href="/assets/_components/academicons/css/academicons.css">
     <link href="/assets/_components/font-awesome/css/font-awesome.css">
     <link href="/assets/_components/prism/themes/prism.css">
     <link href="/assets/_components/prism/plugins/autolinker/prism-autolinker.css">
@@ -116,7 +117,9 @@
     <script src="/assets/_components/prism/components/prism-sql.js"></script>
     <script src="/assets/_components/prism/plugins/autolinker/prism-autolinker.js"></script>
 
+    <script src="/assets/_components/jquery/dist/jquery.js"></script>
     <script src="/assets/_components/jquery-pjax/jquery.pjax.js"></script>
+
     <script src="/assets/js/drawer.js"></script>
     <script src="/assets/js/imageLoader.js"></script>
     <script src="/assets/js/scripts.js"></script>
@@ -141,6 +144,17 @@
         (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
         }());
       }
+
+      window.MathJax = {
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+          processEscapes: true
+        }
+      };
+
     </script>
+
+  <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
   </body>
 </html>

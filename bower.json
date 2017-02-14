@@ -1,9 +1,9 @@
 {
-  "name": "Ghostium",
-  "version": "2.2.1",
+  "name": "ghostium",
+  "version": "2.2.2",
   "dependencies": {
     "modernizr": "~2.6.2",
-    "jquery": "~2.0.3"
+    "jquery": "~2.1.4"
   },
   "homepage": "http://ghostium.oswaldoacauan.com/",
   "authors": [
@@ -18,8 +18,9 @@
     "src/assets/_components"
   ],
   "devDependencies": {
+    "academicons": "master",
     "fastclick": "~0.6.10",
-    "font-awesome": "~4.1.0",
+    "font-awesome": "~4.7.0",
     "prism": "gh-pages",
     "pace": "~0.5.1",
     "jquery-pjax": "master"

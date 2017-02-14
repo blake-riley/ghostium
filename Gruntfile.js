@@ -174,7 +174,7 @@ module.exports = function(grunt) {
     csso: {
       build: {
         options: {
-          report: 'gzip'
+          report: 'min'
         },
         files: [{
           expand: true,
